@@ -54,16 +54,15 @@ form.d-flex button:hover{
 
 }
 .main{
-    width:100%;
+    width: 80%;
     position: absolute;
     color: var(--fontsColor);
     top: 60%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 5;
     display: flex;
-    padding-left:100px;
-    padding-right:100px;
-    justify-content: space-between   ;
+    justify-content: space-between;
   
 }
 .speach{
