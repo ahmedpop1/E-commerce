@@ -4,6 +4,9 @@
     --ndsecondaryColor:#0169fd;
     --fontsColor:#fff;
 }
+*{padding: 0;
+margin:0;
+}
 .navbar {
     background-color: var(--mainColor);
     color:var(--fontsColor);
@@ -24,7 +27,14 @@
     color: var(--ndsecondaryColor);
 }
 form.d-flex button{
-    background-color:var(--mainColor);
+    background-color:var(--ndsecondaryColor);
+    color:var(--fontsColor);
+    
+}
+form.d-flex button:hover{
+    background-color:#08326e;;
+    color:var(--fontsColor);
+    
 }
 .landing{
     position:relative;
@@ -48,8 +58,23 @@ form.d-flex button{
     color: var(--fontsColor);
     z-index: 5;
     top: 60%;
-    left: 21%;
-    width: 333px;
+    left: 28%;
+    width: 434px;
     height: 366px;
     transform: translate(-50%, -50%);
+
 }
+.speach p:first-child{
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 4rem;
+}
+.speach p:last-child {
+ 
+     line-height: 1rem;
+ }
+.speach p:last-child span{
+   color:var(--ndsecondaryColor);
+    line-height: 2rem;
+}
+
