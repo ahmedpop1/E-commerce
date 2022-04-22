@@ -53,16 +53,22 @@ form.d-flex button:hover{
     z-index: -1;
 
 }
-.speach{
-    position: relative;
+.main{
+    width:100%;
+    position: absolute;
     color: var(--fontsColor);
-    z-index: 5;
     top: 60%;
-    left: 28%;
+    transform: translateY(-50%);
+    z-index: 5;
+    display: flex;
+    padding-left:100px;
+    padding-right:100px;
+    justify-content: space-between   ;
+  
+}
+.speach{
     width: 434px;
     height: 366px;
-    transform: translate(-50%, -50%);
-
 }
 .speach p:first-child{
     font-weight: 600;
@@ -78,3 +84,14 @@ form.d-flex button:hover{
     line-height: 2rem;
 }
 
+.ads-window{
+    height:100%;
+    padding:10px;
+    background-color: #333335 ;
+    overflow: hidden;
+}
+.ads-window img{
+    height:270px ;
+    width:300px;
+    
+}
