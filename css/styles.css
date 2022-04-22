@@ -7,6 +7,7 @@
 *{padding: 0;
 margin:0;
 }
+/* start nav bar */
 .navbar {
     background-color: var(--mainColor);
     color:var(--fontsColor);
@@ -36,6 +37,7 @@ form.d-flex button:hover{
     color:var(--fontsColor);
     
 }
+/* end navbar */
 .landing{
     position:relative;
     width:100%;
@@ -54,7 +56,8 @@ form.d-flex button:hover{
 
 }
 .main{
-    width: 80%;
+    width: 100%;
+    padding:5%;
     position: absolute;
     color: var(--fontsColor);
     top: 60%;
@@ -63,6 +66,7 @@ form.d-flex button:hover{
     z-index: 5;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   
 }
 .speach{
@@ -84,13 +88,48 @@ form.d-flex button:hover{
 }
 
 .ads-window{
-    height:100%;
+    position: relative;
+    height:421px;
+    width: 568px;
     padding:10px;
-    background-color: #333335 ;
+    background-color: #1c1c1e;
     overflow: hidden;
 }
+.ads-window div{
+    position:absolute;
+    top:10px;
+    left:10px;
+}
+.ads-window div.active{
+    transform: translateX(-548px);
+   
+    }
+.ads-window div{
+   width:548px;
+   height:401px;
+   transition: all .4s linear;
+   
+}
+.ads-window div:first-child{
+}
 .ads-window img{
-    height:270px ;
-    width:300px;
+    height:100% ;
+    width:100%;
     
 }
+.ads-window div:first-child{
+    left:570px;
+}
+.ads-window img{
+    height:100% ;
+    width:100%;
+    
+}
+@media  (max-width: 1200px) {
+    .ads-window {
+      display:none;
+    }
+    .main{
+    justify-content: space-around;
+    }
+  }
