@@ -67,6 +67,7 @@ form.d-flex button:hover{
     position: relative;
     background-color: white;
     border-radius: 5px;   
+    
 }
 .suggestions ul li{
     cursor: pointer;
@@ -158,10 +159,11 @@ form.d-flex button:hover{
     top:10px;
     left:10px;
 }
-.ads-window div.active{
-    transform: translateX(-548px);
-   
-    }
+.ads-window div:first-child{
+  
+    left:570px;
+}
+
 .ads-window div{
    width:548px;
    height:401px;
