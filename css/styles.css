@@ -115,11 +115,10 @@ form.d-flex button:hover{
 .ads-window img{
     height:100% ;
     width:100%;
+    left:570px;
     
 }
-.ads-window div:first-child{
-    left:570px;
-}
+
 .ads-window img{
     height:100% ;
     width:100%;
