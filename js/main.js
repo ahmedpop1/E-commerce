@@ -1,5 +1,6 @@
 let adwin=document.querySelectorAll(".ads-window div");
 let adwim=document.querySelectorAll(".ads-window div img");
+let form2=document.querySelectorAll(".d-flex")[0];
 let search=document.querySelectorAll(".form-control")[0]
 let sugbox=document.querySelectorAll(".sugul")[0]
 
@@ -9,25 +10,53 @@ let i=0;
 // console.log(adwim)
 let tieminterval;
 starttint();
-window.addEventListener('focus', function(){endinterval();console.log('hi');starttint()});    
+window.addEventListener('focus', function(){endinterval();starttint()});    
 window.addEventListener('blur', function(){
     endinterval()
 });
 
 
 
-let a=['laptop','mobile','personal mob','television','microwave','keyboard','table','keyframe','tattweer'];
-search.addEventListener('keyup',function(){
-      // console.log(search.value);
+// let a=['laptop','mobile','personal mob','television','microwave','keyboard','table','keyframe','tattweer'];
+// search.addEventListener('keyup',function(){
+//       // console.log(search.value);
+     
+//     let searched=search.value;
+//     let srhsrr=searchitem(a,searched);
+//     insersuggestion(srhsrr)
+//     // console.log(text);
+
+
+// })
+
+
+// form2.addEventListener('click',function(){
+//     setTimeout(function(){
+//         let searched=search.value;
+//         let srhsrr=searchitem(a,searched);
+//         insersuggestion(srhsrr)
+//     },100)
     
-    let searched=search.value;
-    let srhsrr=searchitem(a,searched);
-    insersuggestion(srhsrr)
-    // console.log(text);
+// })
 
 
-})
+// search.onchange= function() { 
+// console.log('e')
+//  };
 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 /*************************************************************************************** */
 function starttint(){
